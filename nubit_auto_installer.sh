@@ -34,5 +34,5 @@ RUN apt-get update && apt-get install -y curl
 CMD curl -sL1 https://nubit.sh | bash
 EOF
 echo "Создаем Docker контейнер и выполняем команду внутри него..."
-sudo docker run --rm nubit
+sudo docker run -p 26657-26659:26657-26659 --rm nubit
 echo "Команда выполнена в Docker контейнере."
