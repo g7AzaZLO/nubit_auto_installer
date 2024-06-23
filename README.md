@@ -1,5 +1,8 @@
-# Команда для установки
+# Команда для установки ноды
 . <(wget -qO- https://raw.githubusercontent.com/g7AzaZLO/nubit_auto_installer/main/nubit_auto_installer.sh)
+
+# Команда для установки меню
+wget https://raw.githubusercontent.com/g7AzaZLO/nubit_auto_installer/main/nubit_menu.sh
 
 # Просмотр статистики по ноде(все ли окей)
 docker exec <container_id_or_name> $HOME/nubit-node/bin/nubit das sampling-stats --node.store $HOME/.nubit-light-nubit-alphatestnet-1
